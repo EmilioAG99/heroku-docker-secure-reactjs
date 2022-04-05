@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { StyledEngineProvider } from '@mui/material/styles';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
+
+    <StyledEngineProvider>
     <App />
-  </React.StrictMode>,
+    </StyledEngineProvider>,
   document.getElementById('root')
 );
 
